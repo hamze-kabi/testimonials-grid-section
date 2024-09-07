@@ -16,14 +16,14 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ### Screenshot
 
-![Desktop screenshot](https://github.com/HamzeKabi/testimonials-grid-section/blob/e73a97312a363b1a35a987250b0626fe7140f9da/screenshots/testimonials%20grid%20section%20desktop%20screenshot.png)
+![Desktop screenshot](https://github.com/hamze-kabi/testimonials-grid-section/blob/main/screenshots/testimonials%20grid%20section%20desktop%20screenshot.png)
 
-[mobile screenshot](https://github.com/HamzeKabi/testimonials-grid-section/blob/e73a97312a363b1a35a987250b0626fe7140f9da/screenshots/testimonials%20grid%20section%20mobile%20screenshot.png)
+[mobile screenshot](https://github.com/hamze-kabi/testimonials-grid-section/blob/main/screenshots/testimonials%20grid%20section%20mobile%20screenshot.png)
 
 ### Links
 
-- Solution URL: [https://github.com/HamzeKabi/testimonials-grid-section](https://github.com/HamzeKabi/testimonials-grid-section)
-- Live Site URL: [https://hamzekabi.github.io/testimonials-grid-section/](https://hamzekabi.github.io/testimonials-grid-section/)
+- Solution URL: [https://github.com/hamze-kabi/testimonials-grid-section](https://github.com/hamze-kabi/testimonials-grid-section)
+- Live Site URL: [https://hamze-kabi.github.io/testimonials-grid-section/](https://hamze-kabi.github.io/testimonials-grid-section/)
 
 ## My process
 
@@ -38,5 +38,4 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ## Author
 
-- Github - [https://github.com/HamzeKabi](https://github.com/HamzeKabi)
-- Frontend Mentor - [@HamzeKabi](https://www.frontendmentor.io/profile/HamzeKabi)
+- Github - [https://github.com/hamze-kabi](https://github.com/hamze-kabi)
