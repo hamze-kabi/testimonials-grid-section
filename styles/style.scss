@@ -1,0 +1,199 @@
+@import "normalize.css";
+
+// Variables
+$moderate-violet: hsl(263, 55%, 52%);
+$Very-dark-grayish-blue: hsl(217, 19%, 35%);
+$very-dark-blackish-blue: hsl(219, 29%, 14%);
+$white: hsl(0, 0%, 100%);
+$light-gray: hsl(0, 0%, 81%);
+$light-grayish-blue: hsl(210, 46%, 95%);
+$img-border: hsl(263, 55%, 65%);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $light-grayish-blue;
+
+  .container {
+    padding: 4.375rem 1.56rem;
+    margin: 0 10vw;
+
+    .card {
+      border-radius: 0.7rem;
+      padding: 1.56rem 1.875rem;
+      font-family: "Barlow Semi Condensed";
+      color: $light-gray;
+      margin-bottom: 1.6rem;
+      position: relative;
+
+      svg {
+        position:absolute;
+        opacity: 50%;
+        right: 1rem;
+        top: 0;
+      }
+
+      .img-name-degree {
+        display: flex;
+        flex-direction: row;
+        height: 2.5rem;
+
+        img {
+          border-radius: 50%;
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+
+        .name-degree {
+          display: flex;
+          flex-direction: column;
+          margin-left: 1rem;
+          transform: translateY(-0.65rem);
+
+          .name {
+            font-size: 0.875rem;
+            font-weight: bold;
+            width: fit-content;
+            margin-bottom: 0;
+          }
+
+          .degree {
+            font-size: 0.75rem;
+            color: hsla(0, 0%, 81%, 50%);
+            margin-top: 0.2rem;
+          }
+        }
+      }
+
+      .quote1 {
+        font-weight: 700;
+        font-size: 1.165rem;
+        line-height: 1.55rem;
+      }
+
+      .quote2 {
+        color: hsla(0, 0%, 81%, 50%);
+        font-size: 0.8125rem;
+        font-weight: 500;
+        line-height: 1.2rem;
+      }
+    }
+    .card:nth-child(1) {
+      background-color: $moderate-violet;
+      grid-area: card1;
+
+      .img-name-degree {
+        img {
+          border: 3px solid $img-border;
+        }
+      }
+    }
+
+    .card:nth-child(2) {
+      background-color: $Very-dark-grayish-blue;
+      grid-area: card2;
+    }
+
+    .card:nth-child(3) {
+      background-color: $white;
+      grid-area: card3;
+
+      .img-name-degree {
+        
+        .name {
+          color: hsla(217, 19%, 35%, 65%);
+        }
+
+        .degree {
+          color: hsla(217, 19%, 35%, 50%);
+        }
+      }
+      .quote1 {
+        color: hsla(217, 19%, 35%, 95%);
+      }
+      .quote2 {
+        color: hsla(217, 19%, 35%, 60%);
+      }
+    }
+    
+    .card:nth-child(4) {
+      background-color: $very-dark-blackish-blue;
+      grid-area: card4;
+
+      .img-name-degree {
+        img {
+          border: 3px solid $img-border;
+        }
+      }
+    }
+    
+    .card:nth-child(5) {
+      background-color: $white;
+      grid-area: card5;
+
+      .img-name-degree {
+        
+        .name {
+          color: hsl(217, 19%, 35%, 65%);
+        }
+
+        .degree {
+          color: hsl(217, 19%, 35%, 50%);
+        }
+      }
+      .quote1 {
+        color: hsl(217, 19%, 35%, 95%);
+      }
+      .quote2 {
+        color: hsl(217, 19%, 35%, 60%);
+      }
+    }    
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  body {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: 
+        "card1 card1 card2 card5"
+        "card3 card4 card4 card5";
+      gap: 1.875rem;
+      padding: 0;
+      margin: 10vh 10vw;
+
+      .card {
+        margin: 0;
+        padding: 1.56rem 1.875rem 0 1.875rem;
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 949px) {
+  body {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: 
+        "card2 card4"
+        "card1 card4"
+        "card1 card5"
+        "card3 card5";
+      gap: 1.875rem;
+      padding: 0;
+      margin: 10vh 10vw;
+
+      .card {
+        margin: 0;
+        padding: 1.56rem 1.875rem 0 1.875rem;
+      }
+    }
+  }
+}
